@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+section {
+  display: flex;
+}
+
+.snake-cell {
+  display: flex;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  transition: 100ms;
+}
+
+.snake-cell img {
+  margin: auto;
+}
+
+.snake-head {
+  background-color: green;
+  border-radius: 6px;
+}
+
+.snake-body {
+  background-color: greenyellow;
+}
+
+#snake-container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 10px;
+}
+
+.snake-wrapper {
+  display: flex;
+  margin: auto;
+}
+
+.controls {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.controls button {
+  width: 115px;
+}
+
+.controls .label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.controls select {
+  padding: 5px;
+}
+
+#message,
+span.score {
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.snake-over-message,
+.snake-win-message {
+  width: max-content;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 900;
+  font-size: 40px;
+  color: red;
+}
+
+.snake-win-message {
+  color: green;
+}
